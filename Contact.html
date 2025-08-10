@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Swaagat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchDestinations()">Search</button>
+    <button onclick="clearResults()">Clear</button>
+  </nav>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you!</p>
+  </header>
+
+  <section>
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <label>Message:</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formStatus"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
